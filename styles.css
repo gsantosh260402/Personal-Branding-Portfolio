@@ -461,18 +461,18 @@ color:var(--bgOrange);
 }
 
 #project1{
-    background-image: url(./images/projects/Project1.png);
+    background-image: url(./images/projects/StudyNotion.jpg);
 }
 #project2{
     margin-left:120px;
-    background-image: url(./images/projects/Project2.png);
+    background-image: url(./images/projects/MernChatApp.jpg);
 }
 #project3{
-    background-image: url(./images/projects/Project3.png);
+    background-image: url(./images/projects/Razorpay2.jpg);
 }
 #project4{
     margin-left:120px;
-    background-image: url(./images/projects/Project4.png);
+    background-image: url(./images/projects/WeatherApp.jpg);
 }
 
 
@@ -671,7 +671,398 @@ footer{
 }
 
 
+/* ========================= */
+/* TABLET RESPONSIVE */
+/* ========================= */
 
+@media (max-width: 1024px){
+
+    .container{
+        width:90%;
+    }
+
+    .hero-section{
+        flex-direction: column-reverse;
+        gap:4rem;
+        padding-bottom:3rem;
+    }
+
+    .hero-section-left{
+        align-items:center;
+        text-align:center;
+    }
+
+    .hero-section-description{
+        width:100%;
+    }
+
+    .faded-text{
+        display:none;
+    }
+
+    .project-card{
+        width:100%;
+        height:450px;
+        background-position:center;
+    }
+
+    #project2,
+    #project4{
+        margin-left:0;
+    }
+
+    .project-content{
+        scale:0.9;
+        bottom:10%;
+        left:5%;
+        right:5%;
+    }
+
+    .project-number{
+        font-size:120px;
+    }
+
+    .skills-container{
+        flex-direction:column;
+        gap:4rem;
+        padding:2rem;
+    }
+
+    .skill-container-left,
+    .skill-container-right{
+        width:100%;
+    }
+
+    .skill-fade-text{
+        display:none;
+    }
+
+    .contactus-heading{
+        font-size:4rem;
+    }
+
+    .contactus-sub-heading{
+        font-size:2rem;
+    }
+
+    .form{
+        width:90%;
+        margin:2rem auto;
+    }
+
+    .footer-wrapper{
+        flex-direction:column;
+        gap:2rem;
+        text-align:center;
+    }
+
+}
+
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* ========================= */
+
+
+@media (max-width: 768px){
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .container{
+        width:100%;
+        padding:0 1rem;
+    }
+
+    /* ================= NAVBAR ================= */
+
+    .navbar{
+        flex-direction:column;
+        gap:1rem;
+        padding-top:1rem;
+    }
+
+    .logo{
+        width:60px;
+    }
+
+    .logo-text{
+        font-size:24px;
+    }
+
+    .nav-items{
+        padding:0;
+        gap:1rem;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .nav-items div{
+        font-size:16px;
+    }
+
+    /* ================= HERO SECTION ================= */
+
+    .hero-section{
+        flex-direction:column-reverse;
+        gap:2rem;
+        margin:2rem auto;
+        padding-bottom:3rem;
+    }
+
+    .hero-section-left{
+        align-items:center;
+        text-align:center;
+        gap:1rem;
+    }
+
+    .hero-section-heading{
+        font-size:28px;
+    }
+
+    .hero-section-sub-heading{
+        font-size:34px;
+        line-height:40px;
+    }
+
+    .hero-section-description{
+        width:100%;
+        font-size:15px;
+    }
+
+    .faded-text{
+        display:none;
+    }
+
+    .user-image{
+        padding:1rem;
+    }
+
+    .user-image img{
+        width:260px;
+        height:300px;
+        object-fit:cover;
+    }
+
+    .icon-dots img,
+    .icon-cube img,
+    .icon-circle img,
+    .icon-zigzag img,
+    .icon-plus img{
+        width:30px;
+    }
+
+    /* ================= PROJECT SECTION ================= */
+
+    .page-header{
+        font-size:3rem;
+    }
+
+    .project-container{
+        width:100%;
+        padding:2rem 1rem;
+        gap:2rem;
+    }
+
+    .project-card{
+        width:100%;
+        height:320px;
+        margin:0 auto !important;
+        border-radius:12px;
+        overflow:hidden;
+        background-position:center;
+        background-size:cover;
+    }
+
+    
+    .project-card::after{
+        background-color:rgba(31,31,31,0.55);
+    }
+
+    .project-number{
+        display:block;
+        font-size:70px;
+        transform:scale(0);
+        opacity:0.3;
+    }
+
+
+
+.project-card:hover .project-number{
+   transform:scale(1);
+}
+
+        .project-number-right{
+        right:10px;
+        top:-15px;
+        }
+
+        .project-number-left{
+            left:10px;
+            top:-15px;
+        }
+
+    .project-content{
+        position:absolute;
+        bottom:8%;
+        left:5%;
+        right:5%;
+        padding:0;
+        transform:none !important;
+        scale:1 !important;
+        gap:0.6rem;
+    }
+
+    .project-content-left,
+    .project-content-right{
+        left:5%;
+        right:5%;
+    }
+
+    .project-skill-container{
+        width:100%;
+        gap:8px;
+    }
+
+    .project-skill{
+        width:28px;
+    }
+
+    .project-heading{
+        font-size:30px;
+        line-height:32px;
+    }
+
+    .project-subHeading,
+    .project-sub-heading{
+        width:100%;
+        font-size:15px;
+        line-height:22px;
+    }
+
+    .btn-group{
+        gap:0.8rem;
+        flex-wrap:wrap;
+    }
+
+    .btn-project{
+        padding:0.7rem 1.5rem;
+        font-size:15px;
+    }
+
+    .icon{
+        font-size:28px;
+    }
+
+    /* ================= SKILLS SECTION ================= */
+
+    .skills-container{
+        flex-direction:column;
+        gap:3rem;
+        margin:4rem auto;
+        padding:1rem;
+    }
+
+    .skill-container-left,
+    .skill-container-right{
+        width:100%;
+    }
+
+    .skill-heading{
+        font-size:35px;
+        line-height:40px;
+    }
+
+    .caps{
+        font-size:50px;
+    }
+
+    .skill-subHeading{
+        width:100%;
+    }
+
+    .skills-logo{
+        width:55px;
+    }
+
+    .skill-fade-text{
+        display:none;
+    }
+
+    .blob-style{
+        width:250px;
+    }
+
+    /* ================= CONTACT SECTION ================= */
+
+    .contactus-heading{
+        font-size:3rem;
+        text-align:center;
+    }
+
+    .contactus-sub-heading{
+        font-size:1.2rem;
+        text-align:center;
+        line-height:30px;
+    }
+
+    .form{
+        width:100%;
+        margin:1rem auto;
+    }
+
+    .formfield{
+        width:100%;
+        margin:10px 0;
+        padding:0 1rem;
+        font-size:16px;
+    }
+
+    .formfield-textarea{
+        padding-top:1rem;
+    }
+
+    #submit-btn{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:1rem;
+    }
+
+    #result{
+        text-align:center;
+        font-size:14px;
+        margin-top:10px;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer{
+        padding:2rem 1rem;
+    }
+
+    .footer-wrapper{
+        flex-direction:column;
+        gap:2rem;
+        text-align:center;
+    }
+
+    .footer-faded-text{
+        display:none;
+    }
+
+    .link-wrapper{
+        flex-direction:column;
+        gap:0.7rem;
+    }
+
+    .icon-wrapper{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+}
 
 
 
